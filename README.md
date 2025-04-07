@@ -18,15 +18,15 @@ The application uses real-world data from the Stack Overflow Developer Survey, e
 
 ## Features
 
-- **Salary Prediction**: Predict software developer salaries based on:
+- Salary Prediction: Predict software developer salaries based on:
   - Country
   - Education Level
   - Years of Experience
-- **Data Exploration**: Interactive visualizations including:
+- Data Exploration: Interactive visualizations including:
   - Country-wise distribution of developers
   - Experience vs Salary analysis
   - Education level impact on salary
-- **Interactive UI**: User-friendly interface with:
+- Interactive UI: User-friendly interface with:
   - Dropdown selections
   - Sliders for experience
   - Real-time predictions
@@ -44,28 +44,72 @@ The application uses real-world data from the Stack Overflow Developer Survey, e
 ## Installation
 
 1. Clone the repository:
-```bash
 git clone [your-repository-url]
 cd [repository-name]
-```
 
 2. Install the required packages:
-```bash
 pip install -r requirements.txt
-```
+
+## How to Run
+
+### Prerequisites
+- Python 3.7 or higher
+- pip (Python package installer)
+- Git (for cloning the repository)
+
+### Step-by-Step Guide
+
+1. Set up the Environment
+   - Create a virtual environment: python -m venv venv
+   - Activate the virtual environment:
+     - Windows: venv\Scripts\activate
+     - macOS/Linux: source venv/bin/activate
+
+2. Install Dependencies
+   pip install -r requirements.txt
+
+3. Prepare the Data
+   - Ensure you have the survey_result.csv file in your project directory
+   - Make sure the saved_steps.pkl file is present (this contains the trained model), you can get it by running the Salary_Prediction.ipynb file.
+
+4. Run the Application
+   streamlit run app.py
+
+5. Access the Application
+   - Open your web browser
+   - Navigate to http://localhost:8501
+   - The application should now be running and accessible
+
+### Troubleshooting
+
+If you encounter any issues:
+
+1. Missing Dependencies
+   pip install streamlit pandas numpy scikit-learn plotly
+
+2. File Not Found Errors
+   - Ensure survey_result.csv and saved_steps.pkl are in the correct directory
+   - Check file permissions
+
+3. Port Already in Use
+   - If port 8501 is already in use, Streamlit will automatically try the next available port
+   - You can specify a different port using: streamlit run app.py --server.port 8502
+
+### Development Mode
+
+For development purposes, you can run the application with hot-reloading enabled:
+streamlit run app.py --server.runOnSave true
 
 ## Usage
 
 1. Run the Streamlit app:
-```bash
 streamlit run app.py
-```
 
 2. Open your web browser and navigate to the provided local URL (typically http://localhost:8501)
 
 3. Use the sidebar to switch between:
-   - **Predict**: Get salary predictions based on your inputs
-   - **Explore**: View interactive visualizations of the salary data
+   - Predict: Get salary predictions based on your inputs
+   - Explore: View interactive visualizations of the salary data
 
 ## Data Source
 
