@@ -4,7 +4,7 @@ A Streamlit-based web application that predicts software developer salaries base
 
 ## Description
 
-This project is a comprehensive salary prediction and analysis tool specifically designed for software developers. It leverages machine learning techniques to provide accurate salary estimates based on key factors such as geographical location, educational background, and professional experience. The application is built with a dual-purpose interface:
+This project is a comprehensive salary prediction and analysis tool specifically designed for software developers. It leverages machine learning techniques to provide salary estimates based on key factors such as geographical location, educational background, and professional experience. The application is built with a dual-purpose interface:
 
 1. **Prediction Module**: Users can input their specific details (country, education level, and years of experience) to receive an estimated salary prediction. The prediction is accompanied by an interactive visualization that helps users understand how their salary compares to industry standards.
 
